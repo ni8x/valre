@@ -1,0 +1,25 @@
+# local replay data and reference artifacts
+*.vrf
+data/
+replays/
+repl.txt
+repla.md
+*OP.GG*.html
+
+# tooling / build artifacts
+bin/
+web/node_modules/
+web/dist/
+web/tsconfig.tsbuildinfo
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+*.log
+.env
+
+# editor and agent state
+.qoder/
+.agents/
+.superpowers/
+skills-lock.json
