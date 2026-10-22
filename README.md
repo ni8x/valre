@@ -5,7 +5,8 @@ tactical dossier: the score, the economy, opening duels, trades, aim, movement, 
 rounds that actually decided it.
 
 Everything runs on your machine. Replays are parsed locally and the derived data stays on
-disk. The only outbound requests are for agent, map, and ability icons.
+disk. Network calls are limited to game metadata/icons and the optional AI and Riot ID
+integrations you configure.
 
 ![VALRE landing page](docs/screenshot-home.png)
 
@@ -119,6 +120,9 @@ third-party reference report used during development.
 
 Uploaded replays, exports, and labels stay under `data/` and `replays/`; neither directory
 is tracked by git. There is no telemetry or account system.
+
+Duo check can optionally tag a Riot ID through Riot's API when `RIOT_API_KEY` is set.
+Without a key, the local evidence picker works offline.
 
 The **Ask AI** tab sends a match dossier to the endpoint configured through:
 
